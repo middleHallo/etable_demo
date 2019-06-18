@@ -1,0 +1,15 @@
+<!--compenents/etable.wxml-->
+<view class="etable {{config.border?'etable-border':''}}">
+  <view class='etable-header' style='background-color:{{config.headbgcolor}}'>
+    <view wx:for="{{config.titles}}" wx:key="{{index}}" style="width:{{config.columnWidths[index]}}" class="etable-header-column {{config.border?'etable-header-column-border':''}}">
+      {{item}}
+    </view>
+  </view>
+  <view class='etable-content'>
+    <view wx:for="{{config.content}}" wx:for-index="outIndex" wx:for-item="outItem" wx:key="{{outIndex}}" class="etable-content-row {{config.stripe?(outIndex%2 === 0 ? 'etable-content-row-bg1':'etable-content-row-bg2'):''}}">
+      <view wx:for="{{config.props}}" wx:key="{{outIndex}}-1-{{index}}" style="width:{{config.columnWidths[index]}};" class="etable-content-column {{config.border?'etable-content-column-border':''}}">
+        {{outItem[item]}}
+      </view>
+    </view>
+  </view>
+</view>

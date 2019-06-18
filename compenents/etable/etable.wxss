@@ -1,0 +1,62 @@
+/* compenents/etable.wxss */
+view{
+  box-sizing: border-box;
+}
+
+.etable-border{
+  border: solid 2rpx #dfdfdf;
+}
+
+.etable-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-weight: bold;
+}
+
+.etable-header-column{
+  padding: 6rpx 10rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.etable-header-column-border{
+  border-right: solid 2rpx #dfdfdf;
+}
+
+.etable-header-column-border:last-child{
+  border-right: solid 0rpx #dfdfdf;
+}
+
+.etable-content-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.etable-content-row-bg1{
+  background-color: #ffffff;
+}
+
+.etable-content-row-bg2{
+  background-color: #efefef;
+}
+
+.etable-content-column{
+  padding: 6rpx 10rpx;
+  flex-shrink: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.etable-content-column-border{
+  border-top: solid 2rpx #dfdfdf;
+  border-right: solid 2rpx #dfdfdf;
+}
+
+.etable-content-column-border:last-child{
+  border-right: solid 0rpx #dfdfdf;
+}

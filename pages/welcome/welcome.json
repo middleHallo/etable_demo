@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "etable" : "/compenents/etable/etable"
+  }
+}
