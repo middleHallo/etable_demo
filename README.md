@@ -1,13 +1,14 @@
 # etable演示demo
 
-## 背景
-最近想要捣鼓一个自己的小程序，其中数据展示部分比较多，但是微信小程序并没有table组件，于是自己动手捣鼓了一个，勉强能用。
+## 一：背景
+最近想要捣鼓一个自己的小程序，其中数据展示部分比较多，想用table来做展示，但是微信小程序并没有table组件，于是自己动手捣鼓了一个，勉强能用。
 
 可以看看效果：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/9340937-10afd98158b22584.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-## etable使用介绍
+## 二：etable使用介绍
 
 etable的使用很简单，分为 引入、使用、配置等3个阶段
 
@@ -95,7 +96,7 @@ etable的使用很简单，分为 引入、使用、配置等3个阶段
   }
 ```
 
-## etable的stripe和border背景颜色修改
+## 三：etable的stripe和border背景颜色修改
 想要调整斑马纹的背景颜色，找到etable/etable.wxss中的39-45行，如下，可以自行修改
 ```
 .etable-content-row-bg1{
