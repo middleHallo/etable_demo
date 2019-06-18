@@ -17,6 +17,7 @@ view{
 
 .etable-header-column{
   padding: 6rpx 10rpx;
+  flex-shrink: 0;
   word-break: break-all;
   word-wrap: break-word;
 }
